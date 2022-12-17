@@ -45,10 +45,19 @@ const ContactForm: FC = memo(() => {
 
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
-      <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" />
+      <input
+        className={inputClasses}
+        disabled={true}
+        name="name"
+        onChange={onChange}
+        placeholder="Name"
+        required
+        type="text"
+      />
       <input
         autoComplete="email"
         className={inputClasses}
+        disabled={true}
         name="email"
         onChange={onChange}
         placeholder="Email"
@@ -57,6 +66,7 @@ const ContactForm: FC = memo(() => {
       />
       <textarea
         className={inputClasses}
+        disabled={true}
         maxLength={250}
         name="message"
         onChange={onChange}
@@ -67,8 +77,9 @@ const ContactForm: FC = memo(() => {
       <button
         aria-label="Submit contact form"
         className="w-max rounded-full border-2 border-orange-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800"
+        disabled={true}
         type="submit">
-        Send Message
+        Cannot Send Message
       </button>
     </form>
   );
