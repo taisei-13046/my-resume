@@ -284,7 +284,6 @@ export const contact: ContactSection = {
     {
       type: ContactType.Email,
       text: 'yasui-edu0834@toki.waseda.jp',
-      href: 'yasui-edu0834@toki.waseda.jp',
     },
     {
       type: ContactType.Instagram,
