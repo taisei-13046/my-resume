@@ -6,6 +6,7 @@ import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/geekten.jpg';
 import porfolioImage2 from '../images/portfolio/github.png';
+import porfolioImage5 from '../images/portfolio/qiita1.png';
 import porfolioImage3 from '../images/portfolio/shinonome_advent.png';
 import porfolioImage4 from '../images/portfolio/zenn.png';
 import profilepic from '../images/profilepic.jpg';
@@ -189,6 +190,12 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'I wrote my story that how did I improve my engineer skills.',
     url: 'https://zenn.dev/taisei_13046/articles/c7866a2f8f1b63',
     image: porfolioImage4,
+  },
+  {
+    title: 'My blog "React Query Best Practice"',
+    description: 'I wrote my for React Query!!!',
+    url: 'https://qiita.com/taisei-13046/items/37d685ff07b561881935',
+    image: porfolioImage5,
   },
 ];
 
